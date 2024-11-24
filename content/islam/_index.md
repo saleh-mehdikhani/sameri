@@ -4,8 +4,6 @@ draft = false
 title = 'Islam'
 +++
 
-# Welcome to islam Page!
-
-A sample content of islam
+List of items
 
 
