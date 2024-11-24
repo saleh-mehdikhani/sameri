@@ -84,11 +84,11 @@ expiryDate = ["expiryDate"]
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # description = "CHANGE ME SITE DESCRIPTION"
+  description = "CHANGE ME SITE DESCRIPTION"
   # images = [""]
   themeColor = "#494f5c"
 
-  #homeSubtitle = "CHANGE ME HOME SUBTITLE"
+  # homeSubtitle = "CHANGE ME HOME SUBTITLE"
   footerCopyright = "CHANGE ME FOOTER COPYRIGHT"
   # footerHideThemeName = false
   # bgImg = ""
