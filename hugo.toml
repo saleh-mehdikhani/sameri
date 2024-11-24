@@ -123,18 +123,18 @@ expiryDate = ["expiryDate"]
   # usesAnimation = true
   
   [[params.socialLinks]]
-    name = "custom-link-1"
-    url = "https://example.com"
+    name = "Star"
+    url = "/star/"
     logo = "/images/star-of-david.png"
 
   [[params.socialLinks]]
-    name = "custom-link-2"
-    url = "https://another-example.com"
+    name = "Cross"
+    url = "/cross/"
     logo = "/images/cross.png"
 
   [[params.socialLinks]]
-    name = "custom-link-3"
-    url = "https://another3-example.com"
+    name = "Islam"
+    url = "/islam/"
     logo = "/images/islam.png"
 
 [menu]
