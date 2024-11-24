@@ -134,15 +134,15 @@ expiryDate = ["expiryDate"]
 
   [[params.socialLinks]]
     name = "Islam"
-    url = "/islam/"
+    url = "en/islam/"
     logo = "/images/islam.png"
 
 [menu]
 
-  # [[menu.main]]
-  #  name = "Posts"
-  #  url = "posts/"
-  #  weight = 10
+  #[[menu.main]]
+  #  name = "Islam"
+  #  url = "islam/"
+  #  weight = 0
 
   # [[menu.main]]
   #  name = "About"
