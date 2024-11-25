@@ -91,7 +91,7 @@ expiryDate = ["expiryDate"]
 
   homeSubtitle = "Olemme samat, mutta erilaiset"
   footerCopyright = "This work is licensed under CC BY 4.0"
-  # footerHideThemeName = false
+  footerHideThemeName = true
   # bgImg = ""
   # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
 
@@ -106,7 +106,7 @@ expiryDate = ["expiryDate"]
   readTime = true
   readTimeSeparator = "CHANGE ME READ TIME"
   # legacyLayout = false
-  shareSocial = true
+  shareSocial = false
   # googleTagManager = "GTM-XXXXXXXX"
   # tagSymbol = "#"
   # categorySymbol = "⊲"
