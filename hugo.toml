@@ -122,29 +122,40 @@ expiryDate = ["expiryDate"]
   # noIndexPages = ["404 Page not found"]
   # usesAnimation = true
   
-  [[params.socialLinks]]
-    name = "Star"
-    url = "/star/"
-    logo = "/images/star-of-david.png"
+  #[[params.socialLinks]]
+  #  name = "Star"
+  #  url = "/star/"
+  #  logo = "/images/star-of-david.png"
 
-  [[params.socialLinks]]
-    name = "Cross"
-    url = "/cross/"
-    logo = "/images/cross.png"
+  #[[params.socialLinks]]
+  #  name = "Cross"
+  #  url = "/cross/"
+  #  logo = "/images/cross.png"
 
-  [[params.socialLinks]]
-    name = "Islam"
-    url = "en/islam/"
-    logo = "/images/islam.png"
+  #[[params.socialLinks]]
+  #  name = "Islam"
+  #  url = "en/islam/"
+  #  logo = "/images/islam.png"
 
 [menu]
 
-  #[[menu.main]]
-  #  name = "Islam"
-  #  url = "islam/"
-  #  weight = 0
+  [[menu.main]]
+    name = "Islam"
+    url = "islam/"
+    weight = 30
+    [menu.main.params]
+    logo = "/images/islam.png"
 
-  # [[menu.main]]
-  #  name = "About"
-  #  url = "about-hugo/"
-  #  weight = 20
+  [[menu.main]]
+    name = "Cross"
+    url = "cross/"
+    weight = 20
+    [menu.main.params]
+    logo = "/images/cross.png"
+
+  [[menu.main]]
+    name = "Star"
+    url = "star/"
+    weight = 10
+    [menu.main.params]
+    logo = "/images/star-of-david.png"
