@@ -1,3 +1,7 @@
+{{ define "header" }}
+  {{ partialCached "header.html" . }}
+{{ end }}
+
 {{ define "main" }}
   <main class="site-main section-inner thin {{- if ne false .Site.Params.usesAnimation }} animated fadeIn faster{{- end -}}">
     <h1 style="font-size: 4rem; font-weight: bold;">{{ .Title }}</h1> <!-- Page title -->
@@ -8,6 +12,16 @@
       </div>
     {{- end }}
 
+    <!-- Featured Image or Image from Params -->
+    {{- if .Params.featuredImg -}}
+      <style>.bg-img {background-image: url('{{.Params.featuredImg}}');}</style>
+    {{- else if .Params.images -}}
+      {{- range first 1 .Params.images -}}
+        <style>.bg-img {background-image: url('{{. | absURL}}');}</style>
+      {{- end -}}
+    {{- end -}}
+
+    <!-- Pinned Posts -->
     {{- if and (ge (len (where .Site.Pages ".Params.pin" true)) 1) (.Site.Params.pinned) (not (in .Page.RelPermalink (or "tags" "categories"))) -}}
       <h2>{{- .Site.Params.pinned -}}</h2>
       {{$pin_name := .Site.Params.pinnedSVGname | default "pin" }}
@@ -25,6 +39,7 @@
       </div>
     {{- end }}
 
+    <!-- List of Posts -->
     {{- range .Data.Pages.GroupByDate "2006" }}
       {{ $pages := len (.Pages) }}
       {{ $pages_pin := len ( where .Pages ".Params.pin" "eq" true) }}
@@ -73,4 +88,8 @@
       {{- end }}
     {{- end }}
   </main>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "footer.html" . }}
 {{ end }}
