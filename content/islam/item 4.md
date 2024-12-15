@@ -1,12 +1,12 @@
 +++
 draft = false
-title = 'Item 4'
-image = "images/resalat.png"
-summary = "This is a short summary of the post."
-address = "Kaunispääntie 5"
-postcode = "00970"
-city = "Helsinki"
-addressLink = "https://maps.app.goo.gl/fPhvPXRCg3LBsLiTA"
+title = 'Resalat Islamic Community'
+image = 'images/resalat.png'
+website = 'https://resalat.fi/fa/انجمن-رسالت/'
+address = 'Kaunispääntie 5'
+postcode = '00970'
+city = 'Helsinki'
+addressLink = 'https://maps.app.goo.gl/fPhvPXRCg3LBsLiTA'
 +++
 
-item 4 content
+Resalat Islamic Community - Suomen Ähl-e Beit , previously known as Al-Risala Islamic Community , is a religious community registered in Finland on 8 August 2001. [ 1 ] The majority of the members of the community , which is Shia in orientation , are of Afghan, Iranian and Iraqi origin.

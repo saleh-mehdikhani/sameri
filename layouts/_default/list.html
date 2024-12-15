@@ -1,7 +1,3 @@
-{{ define "header" }}
-  {{ partialCached "header.html" . }}
-{{ end }}
-
 {{ define "main" }}
   <main class="site-main section-inner thin {{- if ne false .Site.Params.usesAnimation }} animated fadeIn faster{{- end -}}">
     <h1 style="font-size: 4rem; font-weight: bold;">{{ .Title }}</h1> <!-- Page title -->
@@ -50,9 +46,13 @@
                     <span class="post-title">{{ .Title }}</span>
                   </a>
 
-                  <div class="post-summary">
-                    {{ .Summary }}
-                  </div>
+                  {{- if .Params.website }}
+                    <div class="post-website">
+                      <a href="{{ .Params.website }}" target="_blank" rel="noopener" class="address-link">
+                        {{ .Params.website }}
+                      </a>
+                    </div>
+                  {{- end }}
 
                   {{- if and .Params.address .Params.postcode .Params.city .Params.addressLink }}
                     <div class="post-address">
@@ -70,11 +70,7 @@
             {{- end }}
           </ul>
         </div>
-      {{- end -}}
+      {{- end }}
     {{- end }}
   </main>
-{{ end }}
-
-{{ define "footer" }}
-  {{ partialCached "footer.html" . }}
 {{ end }}
